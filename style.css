@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    border: 1px solid green;
 }
 
 
@@ -84,29 +85,60 @@ html, body {
     width: 100%;   
 }
 
-/* this is the bottom body*/
 .BBgrid {
     width: 100%;
     height: 25rem; 
-
-}
-
-.BBintroduction {
-    padding-top: 1.5rem;
-    color: #632A00;
-    font-size: 50px;
+    position: relative;
+    }
+    
+    .BBintroduction {
+        padding-top: 1.5rem;
+        color: #632A00;
+        font-size: 50px;
     font-weight: 500;
     text-align: center;
     width: auto;
     letter-spacing: 2px;
-   font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .BBinfo {
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 1rem;
     padding-left: 90px;
     padding-right: 90px;
+    
 }
 
+.BBnongmo {
+    padding-top: 50px;
+    margin-left: 20%;
+    width: 70%;
+    
+}
+
+/* this is the bottom body*/
+
+.gridContainer {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  
+}
+
+.reader {
+    background-color: #e6e6e6;
+    height: 300px;;
+
+}
+
+.digest {
+    background-color: #f7efec;
+    height: 300px;
+}
+
+.chow {
+    background-color: #f5e6e0;
+    height: 300px;
+}
