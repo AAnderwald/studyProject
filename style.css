@@ -1,15 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
 
-h1 {
+
+html, body {
+    color: #656565;
+}
+
+
+/* header section HS*/
+
+.shipping {
+    background-color: #0a872f;
+    color: #fff;
+    display: block;
+    text-align: center;
+    font-size: 9px;
+    padding-top: 1px;
+    box-sizing: border-box;
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-weight: 90;
+}
+
+.HSheaderBar {
+    display: block;
+    border-bottom: 1px solid #0a872f;   
+}
+
+.HSnavBar {
+    width: 100%;
+    position: static; 
+    
+}
+
+.HSnavlist {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0.5rem;
+    flex-grow: 2;
+    font-size: 12px;
+    align-items: center;
+    font-weight: 90;
+    letter-spacing: 1px;
+    font-family: 'Questrial', sans-serif;
+}
+
+.HScrioBruPicture {
+    text-align: left;
+    padding-right: 10rem;
+}
+
+/* this is the main body*/
+
+.MBnotcoffee {
     color: #632A00;
     font-size: 70px;
+    font-weight: 500;
     text-align: center;
-    margin: 0;
-    padding: 0;
+    width: auto;
     display: block;
-    font-weight: normal;
-    font-style: normal;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Bebas Neue', cursive;
+   
 }
 
-.middleSection {
-    background-color: #646464;
+.MBimagestack {
+    display: grid;
+} /* this got rid of the space between the images */
+
+.MBimgsblank {
+    width: 100%;
+    height: 25rem;    
 }
+
+.MBimgsflavors {
+    width: 100%;   
+}
+
+/* this is the bottom body*/
+.BBgrid {
+    width: 100%;
+    height: 25rem; 
+
+}
+
+.BBintroduction {
+    padding-top: 1.5rem;
+    color: #632A00;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    width: auto;
+    letter-spacing: 2px;
+   font-family: 'Bebas Neue', cursive;
+}
+
+.BBinfo {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
