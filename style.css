@@ -1,0 +1,15 @@
+
+h1 {
+    color: #632A00;
+    font-size: 70px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.middleSection {
+    background-color: #646464;
+}
