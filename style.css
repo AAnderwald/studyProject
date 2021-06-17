@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    border: 1px solid green;
+   
 }
 
 
@@ -57,7 +57,7 @@ html, body {
 /* this is the main body*/
 
 .MBnotcoffee {
-    color: #632A00;
+    color: #612800;
     font-size: 70px;
     font-weight: 500;
     text-align: center;
@@ -68,8 +68,8 @@ html, body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Bebas Neue', cursive;
-   
+    font-family: 'Bebas Neue', cursive; 
+    padding-bottom: 100px;
 }
 
 .MBimagestack {
@@ -91,10 +91,10 @@ html, body {
     position: relative;
     }
     
-    .BBintroduction {
-        padding-top: 1.5rem;
-        color: #632A00;
-        font-size: 50px;
+ .BBintroduction {
+    padding-top: 1.5rem;
+    color: #632A00;
+    font-size: 50px;
     font-weight: 500;
     text-align: center;
     width: auto;
@@ -108,6 +108,7 @@ html, body {
     font-size: 1rem;
     padding-left: 90px;
     padding-right: 90px;
+    color: #000000;
     
 }
 
@@ -122,23 +123,109 @@ html, body {
 
 .gridContainer {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
-  
+    position: relative;
 }
 
 .reader {
-    background-color: #e6e6e6;
-    height: 300px;;
-
+    width: 100%;  
+    height: auto; 
 }
 
 .digest {
-    background-color: #f7efec;
-    height: 300px;
+    width: 100%;  
+    height: auto; 
 }
 
 .chow {
-    background-color: #f5e6e0;
-    height: 300px;
+    width: 100%;  
+    height: auto; 
+}
+
+/* best seller */
+
+.bestSellers {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    color: #632A00;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    width: auto;
+    letter-spacing: 2px;
+    font-family: 'Bebas Neue', cursive;
+    
+}
+
+.bestSettlerSection {
+    padding-left: 100px;
+    padding-right: 100px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    position: relative;
+    text-align: center;
+}
+
+.bestSellerPics {
+    width: 70%;  
+    height: auto;
+}
+
+.bestSellerAlign {
+    text-align: center;
+    color: #585E71;
+    font-family: 'Questrial';
+}
+
+/* limited edition */
+
+.limitedEdition{
+    padding-top: 80px;
+    padding-bottom: 40px;
+    color: #632A00;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    width: auto;
+    letter-spacing: 2px;
+    font-family: 'Bebas Neue', cursive;
+    
+}
+
+.limitedEditionSection {
+    padding-left: 100px;
+    padding-right: 100px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    position: relative;
+    text-align: center;
+}
+
+.limitedEditionPics {
+    width: 70%;  
+    height: auto;
+}
+
+.limitedEditionAlign {
+    text-align: center;
+    color: #585E71;
+    font-family: 'Questrial';
+}
+
+/* wavy background section have not looked at yet */
+.wavyBackground {
+    padding-top: 80px;
+    display: grid;
+    width: 100%;
+    height: auto;
+}
+.bpimage {
+    width: 100%;
+    height: auto;
+    display: grid;
+}
+
+/* bottom of page at some point since this page goes on forever */
+.bottom {
+    margin: 30px;
 }
