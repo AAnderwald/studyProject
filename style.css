@@ -4,11 +4,9 @@
    
 }
 
-
 html, body {
     color: #656565;
 }
-
 
 /* header section HS*/
 
@@ -31,9 +29,10 @@ html, body {
 }
 
 .HSnavBar {
-    width: 100%;
+    width: 80vw;
     position: static; 
-    
+    margin: 0 auto;
+    display: flex; /*display inline*/
 }
 
 .HSnavlist {
@@ -54,7 +53,25 @@ html, body {
     padding-right: 10rem;
 }
 
-/* this is the main body*/
+
+.hsListPading {
+    padding: 2%;
+
+}
+
+.hsListPading >a {
+    text-decoration: none; /*took the underline from the words*/
+}
+
+/* main body*/
+.MBimagestack {
+    display: grid;
+} /* this got rid of the space between the images */
+
+.MBimgsblank {
+    width: 100%;
+    height: 25rem;    
+}
 
 .MBnotcoffee {
     color: #612800;
@@ -65,20 +82,11 @@ html, body {
     display: block;
     letter-spacing: 2px;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Bebas Neue', cursive; 
     padding-bottom: 100px;
-}
-
-.MBimagestack {
-    display: grid;
-} /* this got rid of the space between the images */
-
-.MBimgsblank {
-    width: 100%;
-    height: 25rem;    
 }
 
 .MBimgsflavors {
@@ -118,8 +126,6 @@ html, body {
     width: 70%;
     
 }
-
-/* this is the bottom body*/
 
 .gridContainer {
     display: grid;
@@ -168,7 +174,7 @@ html, body {
 
 .bestSellerPics {
     width: 70%;  
-    height: auto;
+    height: 192px;
 }
 
 .bestSellerAlign {
@@ -176,6 +182,7 @@ html, body {
     color: #585E71;
     font-family: 'Questrial';
 }
+
 
 /* limited edition */
 
@@ -189,6 +196,7 @@ html, body {
     width: auto;
     letter-spacing: 2px;
     font-family: 'Bebas Neue', cursive;
+  
     
 }
 
@@ -202,8 +210,8 @@ html, body {
 }
 
 .limitedEditionPics {
-    width: 70%;  
-    height: auto;
+    width: 60%;  
+    height: 197px;
 }
 
 .limitedEditionAlign {
@@ -212,20 +220,71 @@ html, body {
     font-family: 'Questrial';
 }
 
+
 /* wavy background section have not looked at yet */
+
+.do {
+    position: relative;
+}
+.wavyBG {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.table  {
+    padding-left: 100px;
+    padding-right: 100px;
+    display: grid;
+}
+
+.bottomCacaoImg {
+    position: absolute;
+    top: 400px;
+    left: 200px;
+    z-index: 1;
+    width: 200px;
+    height: auto;
+}
+
+.words {
+    position: absolute;
+    top: 400px;
+    left:500px;
+    z-index: 1;
+    width: 200px;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
 .wavyBackground {
+    position: relative;
     padding-top: 80px;
     display: grid;
     width: 100%;
     height: auto;
+    top: 30px;
+    bottom: 30px;
 }
+
 .bpimage {
     width: 100%;
     height: auto;
     display: grid;
 }
 
+
 /* bottom of page at some point since this page goes on forever */
 .bottom {
     margin: 30px;
+}
+
+@media (max-width: 750px){
+    html {
+        font-size: 12px;
+    }
+    .HSnavlist {
+        display:none;
+    }
+
 }
